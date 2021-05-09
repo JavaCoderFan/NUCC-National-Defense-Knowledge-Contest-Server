@@ -9,7 +9,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging><!-- 以war运行是改成war -->
 
-	<name>NUCC</name>
+	<name>fhexamm</name>
 	<description>fhadmin for Spring Boot</description>
 
 	<parent>
@@ -319,22 +319,10 @@
 			</resource>
 			<resource>
 				<directory>src/main/resources</directory>
-				<includes>  
-                <include>**/*.properties</include>  
-                <include>**/*.xml</include>  
-                <include>**/*.tld</include>  
-            </includes> 
 				<filtering>false</filtering>
-				<resource>  
-            <directory>src/main/java</directory>  
-            <includes>  
-                <include>**/*.properties</include>  
-                <include>**/*.xml</include>  
-                <include>**/*.tld</include>  
-            </includes>  
-            <filtering>false</filtering>  
-        </resource>  
-    </resources>
+				<includes>
+					<include>**/**</include>
+				</includes>
 			</resource>
 		</resources>
 	</build>
